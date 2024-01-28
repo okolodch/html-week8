@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #151515;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.movie-card {
+  margin-top: 100px;
+  min-height: 65vh;
+  text-align: center;
+  position: relative;
+}
+.movie-title {
+  text-transform: uppercase;
+}
+.movie-poster-container img {
+  margin-top: 2rem;
+  height: 500px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.movie-genres {
+  margin-top: 1.2rem;
+}
+.movie-rating {
+  margin-top: 2rem;
+
+  border: 1px solid #151515;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+.movie-duration {
+  margin-left: 1rem;
+  letter-spacing: 0.2rem;
+}
+.movie-duration:before {
+  content: "\2022";
+}
+.movie-info-quote {
+  color: #777;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.movie-info-overview-title {
+  margin-top: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.movie-info-overview {
+  margin-top: 16px;
+}
+.movie-info-actions {
+  font-size: 1.1rem;
+}
+.movie-info-actions ul {
+  list-style: none;
+}
+.movie-info-actions ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(3, 37, 65);
+
+}
+.movie-info-actions ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #777;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+footer ul li a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777;
+
+}
